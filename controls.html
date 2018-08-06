@@ -1,0 +1,178 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Concordia Greenhouse | Controller</title> 
+	<link rel="stylesheet" type="text/css" href="controls.css"> 
+</head> 
+<body>
+<header> 
+<nav>
+	<p>#BeSmart&Green</p>
+	<ul> 
+		<li class="current"><a href="index.html">Home</a></li>
+		<li><a href="#">Graphs</a> 
+			<ul> 
+				<li><a href="temp.php">Temperature</a></li> 
+				<li><a href="humidity.php">Humidity</a></li> 
+				<li><a href="soil.php">Soil Moisture</a></li> 
+				<li><a href="carbon.php">Carbon Dioxide</a></li> 
+				
+			</ul>
+		</li>
+		<li><a href="setrange.php">SetYourRange</a><li>
+		<li><a href="about.html">About</a><li> 
+	</u1>
+</nav>
+</header>
+
+<section id="textboxx">
+<div class="mhead">
+	<h1>Manual Mode</h1>	
+</div>
+<form>
+<div class="input-group">
+<label>Pump </label>
+<button type="button" class="button_m" id="clickON">ON</button> <button type="button" class="button_m" id="clickOFF">OFF</button>
+</div>
+
+<div class="input-group">
+<label>Heater </label><button type="button" class="button_m" id="clickONH">ON</button> <button type="button" class="button_m" id="clickOFFH">OFF</button>
+</div>
+
+<div class="input-group">
+<label>Fan </label><button type="button" class="button_m" id="clickONF">ON</button> <button type="button" class="button_m" id="clickOFFF">OFF</button>
+</div>
+</form>
+</section>
+
+<aside id="sidebar">
+<div class="mhead">
+	<h1>Automatic Mode</h1>	
+</div>
+<form>
+<div class="input-group">
+<label></label>
+<button type="button" class="button_m" id="clickONAuto">ON</button> <button type="button" class="button_m" id="clickOFFAuto">OFF</button>
+</div>
+</form>
+</section>
+</aside>
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#clickON').click(function(){
+					var a = new XMLHttpRequest();
+					a.open("GET", "pumpon.php");
+					a.onreadystatechange=function(){
+						if(a.readyState==4){
+							if(a.status == 200){
+							}
+							else alert("HTTP ERROR");
+						}
+					}
+					a.send();
+				});
+				
+				$('#clickOFF').click(function(){
+					var a = new XMLHttpRequest();
+					a.open("GET", "pumpoff.php");
+					a.onreadystatechange=function(){
+						if(a.readyState==4){
+							if(a.status == 200){
+							}
+							else alert("HTTP ERROR");
+						}
+					}
+					a.send();
+				});
+
+				$('#clickONH').click(function(){
+					var a = new XMLHttpRequest();
+					a.open("GET", "heateron.php");
+					a.onreadystatechange=function(){
+						if(a.readyState==4){
+							if(a.status == 200){
+							}
+							else alert("HTTP ERROR");
+						}
+					}
+					a.send();
+				});
+				
+				$('#clickOFFH').click(function(){
+					var a = new XMLHttpRequest();
+					a.open("GET", "heateroff.php");
+					a.onreadystatechange=function(){
+						if(a.readyState==4){
+							if(a.status == 200){
+							}
+							else alert("HTTP ERROR");
+						}
+					}
+					a.send();
+				});
+				
+				$('#clickONF').click(function(){
+					var a = new XMLHttpRequest();
+					a.open("GET", "fanon.php");
+					a.onreadystatechange=function(){
+						if(a.readyState==4){
+							if(a.status == 200){
+							}
+							else alert("HTTP ERROR");
+						}
+					}
+					a.send();
+				});
+			
+				$('#clickOFFF').click(function(){
+					var a = new XMLHttpRequest();
+					a.open("GET", "fanoff.php");
+					a.onreadystatechange=function(){
+						if(a.readyState==4){
+							if(a.status == 200){
+							}
+							else alert("HTTP ERROR");
+						}
+					}
+					a.send();
+				});
+				
+				$('#clickONAuto').click(function(){
+					var a = new XMLHttpRequest();
+					a.open("GET", "autoon.php");
+					a.onreadystatechange=function(){
+						if(a.readyState==4){
+							if(a.status == 200){
+							}
+							else alert("HTTP ERROR");
+						}
+					}
+					a.send();
+				});
+			
+				$('#clickOFFAuto').click(function(){
+					var a = new XMLHttpRequest();
+					a.open("GET", "autooff.php");
+					a.onreadystatechange=function(){
+						if(a.readyState==4){
+							if(a.status == 200){
+							}
+							else alert("HTTP ERROR");
+						}
+					}
+					a.send();
+				});
+			});
+		</script>
+	
+<footer>
+	<p>Concordia Smart Greenhouse, Copyright &copy;2018</p>
+	</footer>
+
+</body>
+</html>
+

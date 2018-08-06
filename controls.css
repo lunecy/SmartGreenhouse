@@ -1,0 +1,191 @@
+* {
+margin: 0;
+padding: 0;
+} 
+
+body{
+background-color: #eaf0ec;
+background-size: cover;
+}
+
+/*Navigation Bar*/
+nav{
+width: 100%;
+height:60.5px;
+background-color: #101a0a;
+
+}
+
+/*#BESmartGreen*/
+nav p {
+font-family: arial;
+color: #fff;
+font-size: 20px;
+line-height: 55px;
+float: left;
+padding: 0px 20px;
+}
+
+nav ul{
+float: left;
+}
+
+nav ul li{
+float: left;
+list-style: none; /*no bullet point*/
+position: relative; /*to remove the spacing between words and hv vertical dropdown*/
+}
+
+nav .current a{
+color:#bcd209;
+font-weight: bold;
+}
+
+nav ul li a{
+display: block;
+font-family: arial;
+color: #fff;
+font-size: 16px;
+padding: 22px 14px;
+text-decoration: none; /*no underline*/
+}
+
+nav ul li ul{
+display: none; /*hide display inside*/
+position: absolute; /*drop the dropdown downwards*/
+background-color: #101a0a;
+padding: 10px;
+border-radius: 0px 0px 6px 6px;
+}
+
+nav ul li:hover ul{
+display: block; /*show display block when hover on word*/
+
+}
+
+nav ul li ul li{
+width: 140px; /*to fit the sentence of each dropdown in one line(180px)*/
+border-radius: 4px;
+}
+
+nav ul li ul li a{
+padding: 10px 14px;
+}
+
+nav ul li ul li a:hover{
+background-color: #276d29;
+}
+
+nav ul li a:hover{
+background-color: #276d29;
+}
+
+/*aside#sidebar{
+float: right;
+width: 30%;
+margin-right: 60px;
+margin-top: 50px;
+}*/
+
+aside#sidebar{
+float: right;
+width: 30%;
+margin-right: 100px;
+margin-top: 50px;
+}
+
+#sidebar .mhead{
+width: 80%; /*lenth of hearder*/
+margin: 60px auto 0px; /*attach header to box*/
+color: white;
+font-size: 80%;
+font-weight: none;
+background: #101a0a;
+text-align: center;
+border:1px solid #bcd209;
+border-bottom: none;
+border-radius: 10px 10px 0px 0px; /*around border*/
+padding: 20px;
+}
+
+
+#sidebar form{
+width:80%;
+margin: 0px auto;
+padding: 20px;
+border:1px solid #bcd209;
+background: #eaf0ec;
+border-radius: 0px 0px 10px 10px;
+text-align: center;
+}
+
+#textboxx{
+width: 58%;
+float: left;
+margin-left: 20px;
+}
+
+/*#textboxx{
+width: 58%;
+float: left;
+margin-left: 60px;
+margin-top: 50px;
+}*/
+
+#textboxx .mhead{
+width: 60%; /*lenth of hearder*/
+margin: 60px auto 0px; /*attach header to box*/
+color: white;
+font-size: 80%;
+font-weight: none;
+background: #101a0a;
+text-align: center;
+border:1px solid #bcd209;
+border-bottom: none;
+border-radius: 10px 10px 0px 0px; /*around border*/
+padding: 20px;
+}
+
+
+#textboxx form{
+width:60%;
+margin: 0px auto;
+padding: 20px;
+border:1px solid #bcd209;
+background: #eaf0ec;
+border-radius: 0px 0px 10px 10px;
+text-align: center;
+}
+
+.input-group{
+margin: 10px 0px 10px 0px; /*inside big box spacing*/
+}
+
+.input-group label{
+padding: 5px 10px 0px 0px;
+font-size: 20px;
+color: #101a0a;
+margin:0px;
+display: block;
+text-align: left;
+}
+
+.button_m{
+height: 39px;
+padding: 10px 20px 10px 20px;
+font-size: 15px;
+color: #ffffff;
+background: #101a0a;
+border: 1px solid #bcd209;
+border-radius: 5px; 
+text-align: center;
+}
+
+footer{
+padding:20px;
+margin-top:480px;
+font-family: arial;
+color: #fff;
+background-color: #101a0a;
+text-align: center;
+} 

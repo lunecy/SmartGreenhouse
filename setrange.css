@@ -1,0 +1,186 @@
+* {
+margin: 0;
+padding: 0;
+} 
+
+body{
+background-color: #eaf0ec;
+background-size: cover;
+}
+
+/*Navigation Bar*/
+nav{
+width: 100%;
+height:60.5px;
+background-color: #101a0a;
+
+}
+
+/*#BESmartGreen*/
+nav p {
+font-family: arial;
+color: #fff;
+font-size: 20px;
+line-height: 55px;
+float: left;
+padding: 0px 20px;
+}
+
+nav ul{
+float: left;
+}
+
+nav ul li{
+float: left;
+list-style: none; /*no bullet point*/
+position: relative; /*to remove the spacing between words and hv vertical dropdown*/
+}
+
+nav .current a{
+color:#bcd209;
+font-weight: bold;
+}
+
+nav ul li a{
+display: block;
+font-family: arial;
+color: #fff;
+font-size: 16px;
+padding: 22px 14px;
+text-decoration: none; /*no underline*/
+}
+
+nav ul li ul{
+display: none; /*hide display inside*/
+position: absolute; /*drop the dropdown downwards*/
+background-color: #101a0a;
+padding: 10px;
+border-radius: 0px 0px 6px 6px;
+}
+
+nav ul li:hover ul{
+display: block; /*show display block when hover on word*/
+
+}
+
+nav ul li ul li{
+width: 140px; /*to fit the sentence of each dropdown in one line(180px)*/
+border-radius: 4px;
+}
+
+nav ul li ul li a{
+padding: 10px 14px;
+}
+
+nav ul li ul li a:hover{
+background-color: #276d29;
+}
+
+nav ul li a:hover{
+background-color: #276d29;
+}
+
+#textbox .rhead{
+width: 60%; /*lenth of hearder*/
+margin: 50px auto 0px; /*attach header to box*/
+color: white;
+font-size: 80%;
+font-family: arial;
+font-weight: none;
+background: #101a0a;
+text-align: center;
+border:1px solid #bcd209;
+border-bottom: none;
+border-radius: 10px 10px 0px 0px; /*around border*/
+padding: 20px;
+}
+
+#textbox form{
+width:60%;
+margin: 0px auto;
+padding: 20px;
+border:1px solid #bcd209;
+background: #eaf0ec;
+border-radius: 0px 0px 10px 10px;
+text-align: center;
+}
+
+.input-group{
+margin: 10px 0px 10px 0px; /*inside big box spacing*/
+}
+
+.input-group input{
+height: 30px;
+width: 93%
+padding: 10px 10px;
+font-size: 14px;
+border-radius: 5px;
+border: 1px solid #bcd209; 
+text-align: center;
+}
+
+.button_1{
+height: 39px;
+padding: 10px 10px 10px 10px;
+font-size: 15px;
+color: #ffffff;
+background: #101a0a;
+border: 1px solid #bcd209;
+border-radius: 5px; 
+}
+
+.error{
+width: 92%;
+margin:0px auto;
+padding: 10px;
+border: 1px solid #a94442;
+color: #a94442;
+background: #f2dede;
+border-radius: 5px;
+text-align: center;
+}
+
+.lastins{
+width: 92%;
+margin:0px auto 5px;
+padding: 10px;
+border: 1px solid #bcd209;
+color: #276d29;
+background: #eaf0ec;
+border-radius: 5px;
+text-align: center;
+}
+
+footer{
+padding:20px;
+margin-top: 80px;
+font-family: arial;
+color: #fff;
+background-color: #101a0a;
+text-align: center;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

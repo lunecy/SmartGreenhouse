@@ -1,0 +1,185 @@
+* {
+margin: 0;
+padding: 0;
+} 
+
+body{
+font:15px Arial; color: grey;
+background-color: #eaf0ec;
+background-size: cover;
+
+}
+
+path {
+    stroke: green;
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+	
+}
+
+/*Navigation Bar*/
+nav{
+width: 100%;
+height:60.5px;
+background-color: #101a0a;
+
+}
+
+/*#BESmartGreen*/
+nav p {
+font-family: arial;
+color: #fff;
+font-size: 20px;
+line-height: 55px;
+float: left;
+padding: 0px 20px;
+}
+
+nav ul{
+float: left;
+}
+
+nav ul li{
+float: left;
+list-style: none; /*no bullet point*/
+position: relative; /*to remove the spacing between words and hv vertical dropdown*/
+}
+
+nav .current a{
+color:#bcd209;
+font-weight: bold;
+}
+
+nav ul li a{
+display: block;
+font-family: arial;
+color: #fff;
+font-size: 16px;
+padding: 22px 14px;
+text-decoration: none; /*no underline*/
+}
+
+nav ul li ul{
+display: none; /*hide display inside*/
+position: absolute; /*drop the dropdown downwards*/
+background-color: #101a0a;
+padding: 10px;
+border-radius: 0px 0px 6px 6px;
+}
+
+nav .nocurrent a{
+color:#fff;
+font-weight: normal;
+}
+
+nav ul li:hover ul{
+display: block; /*show display block when hover on word*/
+
+}
+
+nav ul li ul li{
+width: 140px; /*to fit the sentence of each dropdown in one line(180px)*/
+border-radius: 4px;
+}
+
+nav ul li ul li a{
+padding: 10px 14px;
+}
+
+nav ul li ul li a:hover{
+background-color: #276d29;
+}
+
+nav ul li a:hover{
+background-color: #276d29;
+}
+
+display h2{
+margin-top:20px;
+font-size: 18px;
+font-family: arial;
+color:#101a0a;
+text-align: center;
+}
+
+/*g{
+    font-size: 12px;
+}
+
+.axis text,
+.axis g{
+font-size: 12px;
+stroke-width: 1px;
+color:#101a0a;
+}*/
+
+.container{
+width:100%;
+margin:auto;
+}
+
+footer{
+padding:20px;
+margin-top:98px;
+font-family: arial;
+font-size:16px;
+color: #fff;
+background-color: #101a0a;
+text-align: center;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
