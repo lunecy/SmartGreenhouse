@@ -1,8 +1,8 @@
 <?php
 //connect to database
 $hostname = 'localhost';
-$username = 'test';
-$password = '123'; 
+$username = '';
+$password = ''; 
 
 $lrtemp="";
 $hrtemp="";
