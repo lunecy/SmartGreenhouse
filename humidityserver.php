@@ -1,7 +1,7 @@
 <?php
 $hostname = 'localhost';
-$username = 'test';
-$password = '123';
+$username = '';
+$password = '';
 
 try {
     $dbh = new PDO("mysql:host=$hostname;dbname=measurements", 
